@@ -48,23 +48,23 @@ Template.login.events({
         });
     },
     // "click .btn-microsoft": function(event) {
-        event.preventDefault();
-        Meteor.loginWithMicrosoft({
-            // clientId: "",
-            // secret: "",
-            requestOfflineToken: true,
-            requestPermissions: ['wl.signin'],
-            loginUrlParameters: [],
-            loginStyle: "popup",
-            redirectUrl: "http://localhost:3000/"
-        }, function(err) {
-            if(err) {
-                FlashMessages.sendError("Sign in failed. Please try again");
-            } else {
-                Router.go('/dashboard');
-            }
-        });
-    },
+    //     event.preventDefault();
+    //     Meteor.loginWithMicrosoft({
+    //         // clientId: "",
+    //         // secret: "",
+    //         requestOfflineToken: true,
+    //         requestPermissions: ['wl.signin'],
+    //         loginUrlParameters: [],
+    //         loginStyle: "popup",
+    //         redirectUrl: "http://localhost:3000/"
+    //     }, function(err) {
+    //         if(err) {
+    //             FlashMessages.sendError("Sign in failed. Please try again");
+    //         } else {
+    //             Router.go('/dashboard');
+    //         }
+    //     });
+    // },
     "click .btn-github": function(event) {
         event.preventDefault();
         Meteor.loginWith(function(err){
