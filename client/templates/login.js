@@ -47,11 +47,11 @@ Template.login.events({
             }
         });
     },
-    "click .btn-microsoft": function(event) {
+    // "click .btn-microsoft": function(event) {
         event.preventDefault();
         Meteor.loginWithMicrosoft({
-            // clientId: "fae2719e-9b5a-4938-b3bd-7d55a3b4eade",
-            // secret: "7A2A39031EF550EB8208C937AB111DB31CE31180",
+            // clientId: "",
+            // secret: "",
             requestOfflineToken: true,
             requestPermissions: ['wl.signin'],
             loginUrlParameters: [],
